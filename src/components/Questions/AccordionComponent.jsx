@@ -25,7 +25,7 @@ const AccordionComponent = () => {
             key={item.id}
             expanded={expanded === panelId}
             onChange={handleChange(panelId)}
-            sx={{borderBottom: "1px solid #dee2e6", margin:"0 !important"}}
+            sx={{ borderBottom: "1px solid #dee2e6", margin: "0 !important" }}
           >
             <AccordionSummary
               expandIcon={
