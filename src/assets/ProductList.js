@@ -1,17 +1,17 @@
 const ProductList = [
   {
     id: 1,
-    image: "/src/assets/images/tea.png",
+    image: "/tea.png",
     title: "Regular Tea",
   },
   {
     id: 2,
-    image: "/src/assets/images/maggie.png",
+    image: "/maggie.png",
     title: "Regular Maggie",
   },
   {
     id: 3,
-    image: "/src/assets/images/samosa.png",
+    image: "/samosa.png",
     title: "Samosa",
   },
 ];
