@@ -9,13 +9,13 @@ const Advantages = [
     id: 2,
     icon: "/icon2.png",
     title: "Fast Delivery",
-    description: "Your Favourite Food delivery Partner. A Trendy Food Delivery",
+    description: "The food at your doorstep. Best Service to fulfil your expectations.",
   },
   {
     id: 1,
     icon: "/icon3.png",
     title: "Secured Payment",
-    description: "Your Favourite Food delivery Partner. A Trendy Food Delivery",
+    description: "Our Commitment is Keeping you Safe.Pinnacle of reliability.",
   },
 ];
 export default Advantages

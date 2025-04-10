@@ -10,6 +10,8 @@ import { useEffect } from "react";
 import Footer from "./components/Footer/Footer";
 import AboutUs from "./pages/AboutUs";
 import ContactUs from "./pages/ContactUs";
+import Login from "./pages/Login";
+import Signup from "./pages/Signup";
 
 function App() {
   useEffect(() => {
@@ -45,6 +47,26 @@ function App() {
         <>
           <Navbar />
           <ContactUs />
+          <Footer />
+        </>
+      ),
+    },
+    {
+      path: "/login",
+      element: (
+        <>
+          <Navbar />
+          <Login />
+          <Footer />
+        </>
+      ),
+    },
+    {
+      path: "/signup",
+      element: (
+        <>
+          <Navbar />
+          <Signup />
           <Footer />
         </>
       ),

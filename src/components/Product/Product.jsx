@@ -30,8 +30,7 @@ const Product = () => {
         gap={{ lg: 3, md: 3, sm: 10, xs: 10 }}
       >
         {ProductList.map((item, index) => (
-          <Card key={index} data-aos="fade-up"
-          data-aos-duration="3000">
+          <Card key={index} data-aos="fade-up" data-aos-duration="3000">
             {/* Floating Circular Image */}
             <Box
               sx={{
@@ -39,7 +38,7 @@ const Product = () => {
                 height: 100,
                 borderRadius: "50%",
                 backgroundColor: "#FBFBFB",
-                border: "1px solid #F16214",
+                border: "1px solid #F8DDCD",
                 position: "absolute",
                 top: "-40px",
                 left: "50%",
@@ -77,7 +76,17 @@ const Product = () => {
 
             {/* Card Content */}
             <CardContent>
-              <Typography variant="h4">{item.title}</Typography>
+              <Typography variant="h4" fontWeight={400}>
+                {item.title}
+              </Typography>
+              <Typography
+                variant="body1"
+                pt={2}
+                fontSize="24px !important"
+                sx={{ opacity: "60%" }}
+              >
+                {item.price}
+              </Typography>
             </CardContent>
 
             {/* Floating Circular Image */}

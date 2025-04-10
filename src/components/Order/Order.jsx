@@ -2,6 +2,8 @@ import { Box, Container, Grid, Typography } from "@mui/material";
 import React from "react";
 import mobilegrp from "../../assets/images/Group.png";
 import applestore from "../../assets/images/applestore.png";
+import googleplay from "../../../public/google play.png";
+import bg from "../../../public/bg1.png";
 const Order = () => {
   return (
     <div>
@@ -15,7 +17,8 @@ const Order = () => {
               sm: "40px 20px",
               xs: "20px",
             },
-            backgroundColor: "#444444",
+            // backgroundColor: "#444444",
+            backgroundImage: `url(${bg})`,
             borderRadius: " 50px 0px 50px 0px",
             height: { lg: "345px", md: "345px", sm: "100%", xs: "100%" },
             position: "relative",
@@ -43,7 +46,13 @@ const Order = () => {
               <Typography variant="h3" textAlign="left">
                 Simple Way To Order Your Foods
               </Typography>
-              <Box mt={5} sx={{ cursor: "pointer" }}>
+              <Box mt={5} sx={{ cursor: "pointer", display: "flex", gap: 2 }}>
+                <Box
+                  component="img"
+                  src={googleplay}
+                  alt="googleplay"
+                  sx={{ maxWidth: 160, height: "auto" }}
+                />
                 <Box
                   component="img"
                   src={applestore}

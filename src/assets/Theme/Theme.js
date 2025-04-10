@@ -155,7 +155,7 @@ const theme = createTheme({
             fontWeight: 400,
             lineHeight: "28px",
             color: "#212529 !important",
-          },        
+          },
         },
       },
     },
@@ -236,13 +236,13 @@ const theme = createTheme({
     MuiCard: {
       styleOverrides: {
         root: {
-          border: "1px solid #F16214",
+          border: "1px solid #F8DDCD",
           position: "relative",
           backgroundColor: "#fffcfb",
           borderRadius: "25px",
           textAlign: "center",
-          padding: "85px 0px",
-          width: "250px",
+          padding: "65px 0px",
+          width: "280px",
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
@@ -250,16 +250,13 @@ const theme = createTheme({
           zIndex: 0,
           overflow: "visible",
           transition: "transform 0.3s ease",
-          // "&:hover": {
-          //   transform: "scale(1.1)", // Slight zoom effect on card
-          // },
         },
       },
     },
     MuiCardContent: {
       styleOverrides: {
         root: {
-          padding: "85px auto",
+          padding: "85px auto !important",
           textAlign: "center",
         },
       },

@@ -8,9 +8,11 @@ import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import MenuItem from "@mui/material/MenuItem";
-import logo from "../../assets/images/logo.png";
+import logo from "../../assets/images//Logo1.png";
 import { NavLink } from "react-router-dom";
 import { Link } from "@mui/material";
+import LoginBtn from "../Button/LoginBtn";
+import SignupBtn from "../Button/SignupBtn";
 
 const pages = [
   { name: "Home", path: "/" },
@@ -32,13 +34,24 @@ function Navbar() {
   return (
     <AppBar position="static">
       <Container maxWidth="lg">
-        <Toolbar disableGutters>
-          <img src={logo} alt="logo" height={80} width={90} />
+        <Toolbar
+          disableGutters
+          sx={{
+            borderBottom: "1px solid #CBCBCB",
+            display: "flex",
+            alignItems: "center !important",
+            justifyContent: "center",
+          }}
+        >
+          <NavLink to="/">
+            <img src={logo} alt="logo" height={50} width={100} />
+          </NavLink>
           <Box
             sx={{
               flexGrow: 1,
               display: { xs: "flex", md: "none" },
               justifyContent: "flex-end",
+              alignItems: "center !important",
             }}
           >
             <IconButton
@@ -67,15 +80,21 @@ function Navbar() {
               onClose={handleCloseNavMenu}
               sx={{ display: { xs: "block", md: "none" }, width: "100%" }}
             >
-              {pages.map((page) => (
+              {/* {pages.map((page) => (
                 <MenuItem key={page.name} onClick={handleCloseNavMenu}>
                   <NavLink to={page.path}>
                     <Typography variant="h6" className="navlink">
                       {page.name}
                     </Typography>
                   </NavLink>
+                  <LoginBtn />
+                  <SignupBtn />
                 </MenuItem>
-              ))}
+              ))} */}
+              <MenuItem>
+                <LoginBtn />
+                <SignupBtn />
+              </MenuItem>
             </Menu>
           </Box>
 
@@ -84,15 +103,18 @@ function Navbar() {
               flexGrow: 1,
               display: { xs: "none", md: "flex" },
               justifyContent: "flex-end",
+              alignItems: "center !important",
             }}
           >
-            {pages.map((page) => (
+            {/* {pages.map((page) => (
               <NavLink to={page.path}>
                 <Typography variant="h6" className="navlink">
                   {page.name}
                 </Typography>
               </NavLink>
-            ))}
+            ))} */}
+            <LoginBtn />
+            <SignupBtn />
           </Box>
         </Toolbar>
       </Container>
