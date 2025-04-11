@@ -2,7 +2,8 @@ import { Box, Container, Grid, Typography } from "@mui/material";
 import React from "react";
 import appstore from "../../assets/images/AppStore.png";
 import playstore from "../../assets/images/GooglePlay.png";
-import logo from "../../assets/images/logo.png";
+// import logo from "../../assets/images/logo.png";
+import logo from "../../assets/images/Logo1.png";
 import socialIcons from "../../assets/SocialMedia";
 import Link from "@mui/material/Link";
 const Footer = () => {
@@ -42,7 +43,7 @@ const Footer = () => {
                 alignItems: "flex-start",
               }}
             >
-              <Box component="img" src={logo} alt="logo" sx={{ height: 100 }} />
+              <Box component="img" src={logo} alt="logo" />
               <Box sx={{ display: "flex" }}>
                 {socialIcons.map((items) => (
                   <>
@@ -143,7 +144,11 @@ const Footer = () => {
         <Box sx={{ padding: "20px" }}>
           <Typography
             variant="caption"
-            sx={{ lineHeight: "24px", fontWeight: 500 , textAlign:"center !important" }}
+            sx={{
+              lineHeight: "24px",
+              fontWeight: 500,
+              textAlign: "center !important",
+            }}
           >
             © 2025 All rights reserved by IHOCHINFOTECH PVT. LTD.
           </Typography>

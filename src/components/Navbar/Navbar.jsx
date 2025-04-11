@@ -80,20 +80,18 @@ function Navbar() {
               onClose={handleCloseNavMenu}
               sx={{ display: { xs: "block", md: "none" }, width: "100%" }}
             >
-              {/* {pages.map((page) => (
+              {pages.map((page) => (
                 <MenuItem key={page.name} onClick={handleCloseNavMenu}>
                   <NavLink to={page.path}>
                     <Typography variant="h6" className="navlink">
                       {page.name}
                     </Typography>
                   </NavLink>
-                  <LoginBtn />
-                  <SignupBtn />
                 </MenuItem>
-              ))} */}
+              ))}
               <MenuItem>
-                <LoginBtn />
-                <SignupBtn />
+                <LoginBtn to="/login" />
+                <SignupBtn to="/signup" />
               </MenuItem>
             </Menu>
           </Box>
@@ -106,15 +104,15 @@ function Navbar() {
               alignItems: "center !important",
             }}
           >
-            {/* {pages.map((page) => (
+            {pages.map((page) => (
               <NavLink to={page.path}>
                 <Typography variant="h6" className="navlink">
                   {page.name}
                 </Typography>
               </NavLink>
-            ))} */}
-            <LoginBtn />
-            <SignupBtn />
+            ))}
+            <LoginBtn to="/login" />
+            <SignupBtn to="/signup" />
           </Box>
         </Toolbar>
       </Container>

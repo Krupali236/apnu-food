@@ -103,13 +103,13 @@ const Form = () => {
           variant="h4"
           fontWeight={500}
           data-aos="zoom-in"
-          data-aos-duration="3000"
+          data-aos-duration="2000"
         >
           We'd love to hear from you!
         </Typography>
         <Box maxWidth={600} mx="auto" my={6}>
           <Grid container spacing={3} maxWidth="90%">
-            <Grid size={12} data-aos="fade-up" data-aos-duration="3000">
+            <Grid size={12} data-aos="fade-up" data-aos-duration="1000">
               <TextField
                 id="filled-basic"
                 name="name"

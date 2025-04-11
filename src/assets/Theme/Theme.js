@@ -28,7 +28,7 @@ const theme = createTheme({
       fontWeight: 600,
     },
     h4: {
-      fontSize: "24px",
+      fontSize: "20px",
       fontWeight: 600,
       marginBottom: "16px",
       color: "#18181b !important",
@@ -242,7 +242,7 @@ const theme = createTheme({
           borderRadius: "25px",
           textAlign: "center",
           padding: "65px 0px",
-          width: "280px",
+          width: "360px",
           display: "flex",
           flexDirection: "column",
           alignItems: "center",

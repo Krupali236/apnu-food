@@ -16,7 +16,7 @@ const AccordionComponent = () => {
     <div
       data-aos="fade-up"
       data-aos-anchor-placement="center-center"
-      data-aos-duration="2000"
+      data-aos-duration="1000"
     >
       {AccordionData.map((item) => {
         const panelId = `panel${item.id}`;

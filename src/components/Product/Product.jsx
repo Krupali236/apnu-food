@@ -30,7 +30,7 @@ const Product = () => {
         gap={{ lg: 3, md: 3, sm: 10, xs: 10 }}
       >
         {ProductList.map((item, index) => (
-          <Card key={index} data-aos="fade-up" data-aos-duration="3000">
+          <Card key={index} data-aos="fade-up" data-aos-duration="4000">
             {/* Floating Circular Image */}
             <Box
               sx={{
@@ -82,7 +82,7 @@ const Product = () => {
               <Typography
                 variant="body1"
                 pt={2}
-                fontSize="24px !important"
+                fontSize="18px !important"
                 sx={{ opacity: "60%" }}
               >
                 {item.price}
