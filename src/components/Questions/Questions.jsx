@@ -63,7 +63,6 @@ const Questions = () => {
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            // borderBottom: "1px solid #dee2e6",
             cursor: "pointer",
           }}
         >

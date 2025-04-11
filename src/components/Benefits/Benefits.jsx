@@ -9,135 +9,6 @@ import { Container, Typography, Box, Grid } from "@mui/material";
 const Benefits = () => {
   return (
     <div>
-      {/* <Container
-        maxWidth="100%"
-        sx={{ backgroundColor: "#FFFAF8", paddingBottom: "15px" }}
-      >
-        <Container maxWidth="lg">
-          <Box
-            sx={{
-              display: "flex",
-              flexDirection: {
-                lg: "row",
-                md: "row",
-                sm: "column",
-                xs: "column",
-              },
-            }}
-          >
-            {Advantages.map((items) => (
-              <Box
-                gap={2}
-                sx={{
-                  display: "flex",
-                  flexDirection: "column",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  padding: "20px",
-                }}
-                data-aos="flip-down"
-                data-aos-delay="300"
-                data-aos-duration="1000"
-              >
-                <Box
-                  sx={{
-                    width: "121px",
-                    height: "133px",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    borderRadius: "0px 0px 15px 15px",
-                    transition: "transform .5s ease",
-                    marginBottom: "16px",
-                    "&:hover": {
-                      background: "linear-gradient(#FFFAF8, #f6d4c6)",
-                      transform: "scale(1.2)",
-                    },
-                  }}
-                >
-                  <img src={items.icon} alt="icon" />
-                </Box>
-                <Typography variant="h5" gutterBottom>
-                  {items.title}
-                </Typography>
-                <Typography variant="body2" gutterBottom>
-                  {items.description}
-                </Typography>
-              </Box>
-            ))}
-          </Box>
-        </Container>
-      </Container> */}
-
-      {/* <Container
-        maxWidth="100%"
-        sx={{ backgroundColor: "#FFFAF8", paddingBottom: "15px" }}
-      >
-        <Grid container>
-          <Grid size={2} sx={{ display: "flex" }}>
-            <Box component="img" src={vector1} alt="vector1" height="100%" />
-            <Box component="img" src={vector3} alt="vector1" height="100%" />
-          </Grid>
-          <Grid size={8}>
-            <Box
-              sx={{
-                display: "flex",
-                flexDirection: {
-                  lg: "row",
-                  md: "row",
-                  sm: "column",
-                  xs: "column",
-                },
-              }}
-            >
-              {Advantages.map((items) => (
-                <Box
-                  gap={2}
-                  sx={{
-                    display: "flex",
-                    flexDirection: "column",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    padding: "20px",
-                  }}
-                  data-aos="flip-down"
-                  data-aos-delay="300"
-                  data-aos-duration="1000"
-                >
-                  <Box
-                    sx={{
-                      width: "121px",
-                      height: "133px",
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "center",
-                      borderRadius: "0px 0px 15px 15px",
-                      transition: "transform .5s ease",
-                      marginBottom: "16px",
-                      "&:hover": {
-                        background: "linear-gradient(#FFFAF8, #f6d4c6)",
-                        transform: "scale(1.2)",
-                      },
-                    }}
-                  >
-                    <img src={items.icon} alt="icon" />
-                  </Box>
-                  <Typography variant="h5" gutterBottom>
-                    {items.title}
-                  </Typography>
-                  <Typography variant="body2" gutterBottom>
-                    {items.description}
-                  </Typography>
-                </Box>
-              ))}
-            </Box>
-          </Grid>
-          <Grid size={2} sx={{ display: "flex" }}>
-            <Box component="img" src={vector2} alt="vector2" height={40} />
-            <Box component="img" src={vector4} alt="vector2" height={40} />
-          </Grid>
-        </Grid>
-      </Container> */}
       <Box sx={{ position: "relative" }}>
         {/* Background Vectors - Left */}
         <Box
@@ -190,7 +61,7 @@ const Benefits = () => {
                   padding: "20px",
                 }}
                 data-aos="flip-down"
-                data-aos-delay="300"
+                data-aos-delay="100"
                 data-aos-duration="1000"
               >
                 <Box

@@ -24,7 +24,7 @@ const Login = () => {
             submitLabel="Login"
           />
         </Box>
-        <Box sx={{ width: "77%", display: "flex", justifyContent: "flex-end" }}>
+        <Box sx={{ width: "78%", display: "flex", justifyContent: "flex-end" }}>
           <SignupBtn label="Login" type="button" onClick={handleLoginBtn} />
         </Box>
       </Container>

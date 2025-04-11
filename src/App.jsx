@@ -3,16 +3,23 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { ThemeProvider } from "@mui/material";
 import theme from "./assets/Theme/Theme";
 import Navbar from "./components/Navbar/Navbar";
-import Home from "./pages/Home";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
 import Footer from "./components/Footer/Footer";
-import AboutUs from "./pages/AboutUs";
-import ContactUs from "./pages/ContactUs";
-import Login from "./pages/Login";
-import Signup from "./pages/Signup";
+import { useEffect, lazy, Suspense } from "react";
+import CircularProgress from "@mui/material/CircularProgress";
+// import Home from "./pages/Home";
+// import AboutUs from "./pages/AboutUs";
+// import ContactUs from "./pages/ContactUs";
+// import Login from "./pages/Login";
+// import Signup from "./pages/Signup";
 
+// Lazy-loaded pages
+const Home = lazy(() => import("./pages/Home"));
+const AboutUs = lazy(() => import("./pages/AboutUs"));
+const ContactUs = lazy(() => import("./pages/ContactUs"));
+const Login = lazy(() => import("./pages/Login"));
+const Signup = lazy(() => import("./pages/Signup"));
 function App() {
   useEffect(() => {
     AOS.init({
@@ -76,7 +83,9 @@ function App() {
   return (
     <>
       <ThemeProvider theme={theme}>
-        <RouterProvider router={router}></RouterProvider>
+        <Suspense fallback={<CircularProgress color="primary" sx={{display:"flex" , justifyContent:"center" , alignItems:"center"}}/>}>
+          <RouterProvider router={router} />
+        </Suspense>
       </ThemeProvider>
     </>
   );

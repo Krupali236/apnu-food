@@ -31,7 +31,6 @@ const Order = () => {
             },
           }}
           data-aos="fade-up"
-          data-aos-anchor-placement="center-center"
           data-aos-duration="1000"
         >
           <Grid size={{ lg: 5, md: 5, sm: 12, xs: 12 }}>

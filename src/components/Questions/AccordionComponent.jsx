@@ -13,11 +13,7 @@ const AccordionComponent = () => {
     setExpanded(isExpanded ? panel : false);
   };
   return (
-    <div
-      data-aos="fade-up"
-      data-aos-anchor-placement="center-center"
-      data-aos-duration="1000"
-    >
+    <div data-aos="fade-up" data-aos-duration="1000">
       {AccordionData.map((item) => {
         const panelId = `panel${item.id}`;
         return (

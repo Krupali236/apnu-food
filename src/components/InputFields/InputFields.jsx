@@ -137,16 +137,8 @@ const InputFields = forwardRef(
 
     return (
       <div>
-        {/* <Container
-          maxWidth="lg"
-          sx={{
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        > */}
-          <Box maxWidth={600} mx="auto" my={1}>
+       
+          <Box maxWidth={600} mx="auto" my={2}>
             <Grid
               container
               spacing={2}
@@ -171,7 +163,6 @@ const InputFields = forwardRef(
               {fieldsToShow.map(renderField)}
             </Grid>
           </Box>
-        {/* </Container> */}
       </div>
     );
   }
