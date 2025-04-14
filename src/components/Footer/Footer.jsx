@@ -2,7 +2,6 @@ import { Box, Container, Grid, Typography } from "@mui/material";
 import React from "react";
 import appstore from "../../assets/images/AppStore.png";
 import playstore from "../../assets/images/GooglePlay.png";
-// import logo from "../../assets/images/logo.png";
 import logo from "../../assets/images/Logo1.png";
 import socialIcons from "../../assets/SocialMedia";
 import Link from "@mui/material/Link";

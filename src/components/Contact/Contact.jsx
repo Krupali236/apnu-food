@@ -1,7 +1,5 @@
 import { Box, Container, Grid, Typography } from "@mui/material";
 import React from "react";
-import googleplay from "../../assets/images/GooglePlay.png";
-import appstore from "../../assets/images/AppStore.png";
 import heroimg from "../../assets/images/Hero.png";
 
 const Contact = () => {

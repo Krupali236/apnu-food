@@ -1,6 +1,5 @@
 import React, { useRef } from "react";
 import InputFields from "../components/InputFields/InputFields";
-import LoginBtn from "../components/Button/LoginBtn";
 import SignupBtn from "../components/Button/SignupBtn";
 import { Container, Box } from "@mui/material";
 

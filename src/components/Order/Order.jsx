@@ -2,8 +2,8 @@ import { Box, Container, Grid, Typography } from "@mui/material";
 import React from "react";
 import mobilegrp from "../../assets/images/Group.png";
 import applestore from "../../assets/images/applestore.png";
-import googleplay from "../../../public/google play.png";
-import bg from "../../../public/bg1.png";
+import googleplay from "/google play.png";
+import bg from "/bg1.png";
 const Order = () => {
   return (
     <div>

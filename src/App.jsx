@@ -83,7 +83,7 @@ function App() {
   return (
     <>
       <ThemeProvider theme={theme}>
-        <Suspense fallback={<CircularProgress color="primary" sx={{display:"flex" , justifyContent:"center" , alignItems:"center"}}/>}>
+        <Suspense fallback={<CircularProgress color="primary" sx={{width:"100%", display:"flex" , justifyContent:"center" , alignItems:"center"}}/>}>
           <RouterProvider router={router} />
         </Suspense>
       </ThemeProvider>
