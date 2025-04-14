@@ -5,7 +5,12 @@ const LoginBtn = ({ onClick, to, label = "login", type = "button" }) => {
   const button = (
     <Button
       variant="text"
-      sx={{ marginRight: "20px" }}
+      sx={{
+        color: "#676767 !important",
+        fontWeight: 500,
+        marginRight: "20px",
+        "&:hover": { color: "#F16214 !important" },
+      }}
       onClick={onClick}
       type={type}
     >
