@@ -46,6 +46,14 @@ const InputFields = forwardRef(
         ...prev,
         [name]: value,
       }));
+
+      if (patterns[name] && patterns[name].test(value)) {
+        setErrors((prev) => {
+          const updated = { ...prev };
+          delete updated[name];
+          return updated;
+        });
+      }
     };
 
     const handleBlur = (e) => {
@@ -66,6 +74,8 @@ const InputFields = forwardRef(
 
     const validateAndSubmit = () => {
       const newErrors = {};
+      const updatedValues = { ...values };
+
       fieldsToShow.forEach((field) => {
         const value = values[field] || "";
         if (value.trim() === "") {
@@ -84,11 +94,12 @@ const InputFields = forwardRef(
         refs[firstErrorField]?.current?.focus();
         return;
       }
-
-      if (onSubmit) {
-        onSubmit(values);
-        setValues({});
-      }
+      onSubmit(updatedValues);
+      setValues({});
+      // if (Object.keys(newErrors).length == 0) {
+      //   onSubmit(values);
+      //   setValues({});
+      // }
     };
 
     // Expose the submit function to parent
@@ -137,32 +148,31 @@ const InputFields = forwardRef(
 
     return (
       <div>
-       
-          <Box maxWidth={600} mx="auto" my={2}>
-            <Grid
-              container
-              spacing={2}
-              maxWidth="90%"
-              sx={{
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
+        <Box maxWidth={600} mx="auto" my={2}>
+          <Grid
+            container
+            spacing={2}
+            maxWidth="90%"
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <Typography
+              variant="h4"
+              fontWeight={500}
+              data-aos="zoom-in"
+              data-aos-duration="2000"
+              textAlign="center"
             >
-              <Typography
-                variant="h4"
-                fontWeight={500}
-                data-aos="zoom-in"
-                data-aos-duration="2000"
-                textAlign="center"
-              >
-                {submitLabel === "Login"
-                  ? "Welcome Back"
-                  : "Fill the details for signup"}
-              </Typography>
-              {fieldsToShow.map(renderField)}
-            </Grid>
-          </Box>
+              {submitLabel === "Login"
+                ? "Welcome Back"
+                : "Fill the details for signup"}
+            </Typography>
+            {fieldsToShow.map(renderField)}
+          </Grid>
+        </Box>
       </div>
     );
   }
